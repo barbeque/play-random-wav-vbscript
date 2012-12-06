@@ -28,4 +28,4 @@ randomIndex = Int(rnd * wavFileCount)
 randomWavFile = wavFiles(randomIndex)
 wscript.echo "Playing " & randomWavFile
 Set WshShell = CreateObject("WScript.Shell")
-WshShell.Run "cmd /K start """ & randomWavFile & """"
+WshShell.Run "cmd /K start mplay32 /play /close """ & randomWavFile & """"
