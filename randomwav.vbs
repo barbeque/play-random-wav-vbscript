@@ -27,4 +27,5 @@ Randomize
 randomIndex = Int(rnd * wavFileCount)
 randomWavFile = wavFiles(randomIndex)
 wscript.echo "Playing " & randomWavFile
+Set WshShell = CreateObject("WScript.Shell")
 WshShell.Run randomWavFile
